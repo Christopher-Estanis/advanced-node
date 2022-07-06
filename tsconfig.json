@@ -1,11 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ecs2021",
+    "target": "es2021",
     "outDir": "build",
     "rootDir": "src",
     "strict": true,
     "skipLibCheck": true,
-    "forceConsisten tCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"]
+    }
   },
   "include": ["src"]
 }
