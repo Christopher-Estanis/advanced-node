@@ -8,5 +8,9 @@
   },
   "engines": {
     "node": "16.x"
+  },
+  "dependencies": {
+    "@types/module-alias": "^2.0.1",
+    "module-alias": "^2.2.2"
   }
 }
