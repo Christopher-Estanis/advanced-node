@@ -3,15 +3,33 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "devDependencies": {
-    "@types/node": "^18.0.3",
-    "typescript": "^4.7.4"
+  "scripts": {
+    "start": "node build/main/api",
+    "build": "rimraf build && tsc -p tsconfig-build.json",
+    "lint": "eslint .",
+    "test": "jest --passWithNoTests --no-cache --runInBand",
+    "test:watch": "yarn test -- --watch",
+    "test:coverage": "yarn test -- --coverage"
   },
   "engines": {
     "node": "16.x"
   },
   "dependencies": {
     "@types/module-alias": "^2.0.1",
-    "module-alias": "^2.2.2"
+    "module-alias": "^2.2.2",
+    "rimraf": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^22.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
   }
 }
