@@ -8,7 +8,7 @@ export namespace LoadUserAccountRepository {
   }
 
   export type Result = {
-    id: string
+    id?: string
     name?: string
   } | undefined
 }
