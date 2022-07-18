@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es2021",
     "outDir": "build",
-    "rootDir": "src",
+    "rootDirs": ["src", "tests"],
     "strict": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,7 +14,7 @@
     "emitDecoratorMetadata": true,
     "paths": {
       "@/tests/*": ["../tests/*"],
-      "@/*": ["./*"]
+      "@/*": ["*"]
     }
   },
   "include": ["src", "tests"]
