@@ -12,6 +12,7 @@
     "test:watch": "yarn test -- --watch",
     "test:staged": "yarn test -- --findRelatedTests",
     "test:coverage": "yarn test -- --coverage",
+    "test:external": "yarn test -- -c ./jest.integration.config.js",
     "prepare": "husky install"
   },
   "engines": {
